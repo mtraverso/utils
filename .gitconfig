@@ -1,0 +1,15 @@
+[color]
+        ui = auto
+        diff = auto
+        status = auto
+        interactive = auto
+        branch = auto
+
+[alias]
+	st = status
+	co = checkout
+	cim = commit -m
+	dfcw = add -p
+
+[merge]
+	tool = opendiff
