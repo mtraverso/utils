@@ -55,7 +55,6 @@ plugins=(git brew npm java git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
-source .bash_meli
 source ~/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh
 . `brew --prefix`/etc/profile.d/z.sh
 
