@@ -16,12 +16,11 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%} ✱"
 
 function build_prompt() {
   local LAST_EXIT_CODE=$?
+  local EXIT_CODE_PROMPT="%{$fg_bold[magenta]%}[%n] %t "
   if [[ $LAST_EXIT_CODE -ne 0 ]]; then
-    local EXIT_CODE_PROMPT=' '
     EXIT_CODE_PROMPT+="%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} # %{$reset_color%}"
     echo "$EXIT_CODE_PROMPT"
   else
-    local EXIT_CODE_PROMPT=' '
     EXIT_CODE_PROMPT+="%{$fg_bold[green]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} # %{$reset_color%}"
     echo "$EXIT_CODE_PROMPT"
   fi
