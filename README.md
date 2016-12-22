@@ -7,13 +7,15 @@
 <code>which zsh</code>
 <code>/usr/local/bin/zsh</code>
 
-<code>dscl . -read /Users/$USER UserShell
-    UserShell: /usr/local/bin/zsh</code>
+<code>dscl . -read /Users/$USER UserShell</code>
+   <code>UserShell: /usr/local/bin/zsh</code>
 
-<code>echo $SHELL
-    /usr/local/bin/zsh</code>
+<code>echo $SHELL</code>
+    <code>/usr/local/bin/zsh</code>
 
 <code>git clone git@github.com:mtraverso/utils.git</code>
+
 <code>mv .zshrc .zshrc.orig</code>
+
 <code>ln -s ~/utils/.zshrc ~/.zshrc</code>
 
