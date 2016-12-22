@@ -14,4 +14,10 @@ ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%} ➦"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ✂"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%} ✱"
 
-PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} $ %{$reset_color%} '
+function build_prompt(){
+    retval='%{$fg_bold[green]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} # %{$reset_color%}'
+echo $retval
+}
+
+PROMPT="$(build_prompt)"
+
