@@ -18,9 +18,9 @@ function build_prompt() {
   local LAST_EXIT_CODE=$?
   local EXIT_CODE_PROMPT="%{$fg[green]%}%t%{$reset_color%} [%{$fg_bold[magenta]%} %n %{$reset_color%}] "
   if [[ $LAST_EXIT_CODE -ne 0 ]]; then
-    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}➜"
+    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}➜ "
   else
-    EXIT_CODE_PROMPT+="%{$fg_bold[green]%}➜"
+    EXIT_CODE_PROMPT+="%{$fg_bold[green]%}➜ "
   fi
   EXIT_CODE_PROMPT+=" %{$fg[blue]%}%c%{$fg_bold[cyan]%} # %{$reset_color%}"
   echo "$EXIT_CODE_PROMPT"
