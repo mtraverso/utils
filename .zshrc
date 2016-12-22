@@ -51,7 +51,7 @@ ZSH_THEME="gozilla"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew git-prompt java osx )
+plugins=(git brew git-prompt java osx bower)
 
 source ~/utils/.oh-my-zsh/oh-my-zsh.sh
 source ~/utils/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
