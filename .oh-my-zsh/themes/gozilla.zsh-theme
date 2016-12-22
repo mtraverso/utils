@@ -26,4 +26,4 @@ function build_prompt() {
   fi
 }
 PROMPT='$(build_prompt)'
-RPROMPT='%{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$reset_color%}'
+RPROMPT='%{$reset_color%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$reset_color%}'
