@@ -18,12 +18,12 @@ function build_prompt() {
   local LAST_EXIT_CODE=$?
   local EXIT_CODE_PROMPT="%{$fg[green]%}%t $reset_color% [%{$fg_bold[magenta]%} %n $reset_color% ] "
   if [[ $LAST_EXIT_CODE -ne 0 ]]; then
-    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} # %{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg_bold[red]%}➜ %{$fg[cyan]%}%c%{$fg_bold[cyan]%} # %{$reset_color%}"
     echo "$EXIT_CODE_PROMPT"
   else
-    EXIT_CODE_PROMPT+="%{$fg_bold[green]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$fg_bold[cyan]%} # %{$reset_color%}"
+    EXIT_CODE_PROMPT+="%{$fg_bold[green]%}➜ %{$fg[cyan]%}%c%{$fg_bold[cyan]%} # %{$reset_color%}"
     echo "$EXIT_CODE_PROMPT"
   fi
 }
 PROMPT='$(build_prompt)'
-
+RPROMPT='%{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%}$(git_prompt_status)% %{$reset_color%}'
