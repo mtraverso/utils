@@ -21,3 +21,4 @@
 
 <code> > ln -s ~/utils/.zshrc ~/.zshrc</code>
 
+<code> clone https://github.com/zsh-users/zsh-syntax-highlighting into .oh-my-zsh/zsh-syntax-highlighting
