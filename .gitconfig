@@ -15,6 +15,11 @@
 	sp = stash pop
 	pu = push -u
 	cob = checkout -b
-	
+        cime = commit --allow-empty -m
+        cimn = commit -n -m
+        cp = cherry-pick
+        lga = lg --author
+        loga = log --author
+        sync = pull origin	
 [merge]
 	tool = opendiff
