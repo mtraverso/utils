@@ -23,3 +23,6 @@
         sync = pull origin	
 [merge]
 	tool = opendiff
+[user]
+	email = matias.traverso@gmail.com
+	name = Matias Traverso
