@@ -86,3 +86,5 @@ source ~/repos/utils/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias python="python3"
