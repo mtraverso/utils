@@ -1,1 +1,1 @@
-Download `bootstrap.sh` and run it
+Run [boostrap.sh](https://github.com/mtraverso/bootstrap.sh)
