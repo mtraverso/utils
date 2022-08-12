@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=~/utils/.oh-my-zsh
+export ZSH=~/repos/utils/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -53,10 +53,10 @@ ZSH_THEME="gozilla"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew git-prompt java osx bower)
 
-source ~/utils/.oh-my-zsh/oh-my-zsh.sh
-source ~/utils/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
+source ~/repos/utils/.oh-my-zsh/oh-my-zsh.sh
+source ~/repos/utils/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 . `brew --prefix`/etc/profile.d/z.sh
-source ~/utils/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh
+source ~/repos/utils/.oh-my-zsh/plugins/git-prompt/git-prompt.plugin.zsh
 
 # User configuration
 
